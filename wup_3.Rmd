@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "Joseph Diaz"
+date: "Fall 2025"
 output: html_document
 ---
 
@@ -36,6 +36,10 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```
 
 ## Numerical Summarys 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+i noticed that the number of people sitting in the middle is the highest (89)between the number of people sitting in the front(40)and the back(36). However the standard deviation of people sitting in the back is the highest.
 
 ## Inferential Tests
 
